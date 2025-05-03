@@ -1,0 +1,42 @@
+{
+    "name": "Guri3D",
+    "version": "1.0.0",
+    "description": "Wholf dilinde 3D oyun geliştirme için kullanılan güçlü bir kütüphane",
+    "main": "src/Guri3D.hpp",
+    "dependencies": {
+        "wholf-core": ">= 1.0.0",
+        "wholf-utils": ">= 1.0.0",
+        "wholf-network": ">= 1.0.0",
+        "wholf-graphics": ">= 1.0.0",
+        "wholf-audio": ">= 1.0.0",
+        "wholf-physics": ">= 1.0.0",
+        "wholf-input": ">= 1.0.0"
+    },
+    "devDependencies": {
+        "wholf-test": ">= 1.0.0",
+        "wholf-debug": ">= 1.0.0",
+        "wholf-lint": ">= 1.0.0"
+    },
+    "scripts": {
+        "test": "wholf test",
+        "build": "wholf build",
+        "lint": "wholf lint"
+    },
+    "keywords": [
+        "wholf",
+        "guri3d",
+        "3d",
+        "game",
+        "graphics",
+        "audio",
+        "physics",
+        "input",
+        "joystick"
+    ],
+    "author": "Wholf Development Team",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wholf-lang/Guri3D.git"
+    }
+}

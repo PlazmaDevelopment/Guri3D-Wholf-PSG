@@ -1,0 +1,21 @@
+// 3D fizik testi
+fegn Guri3D {
+    // 3D fizik nesnesi testi
+    addPhysicsObject3D: (object) => {
+        Assert.equal(object.x, 0)
+        Assert.equal(object.y, 0)
+        Assert.equal(object.z, 0)
+        Assert.equal(object.mass, 1.0)
+    }
+    
+    // Fizik güncelleme testi
+    updatePhysics: (deltaTime) => {
+        Assert.greaterThan(deltaTime, 0)
+    }
+    
+    // Çarpışma testi
+    checkCollision: (obj1, obj2) => {
+        Assert.equal(obj1.x, 0)
+        Assert.equal(obj2.x, 1)
+    }
+}

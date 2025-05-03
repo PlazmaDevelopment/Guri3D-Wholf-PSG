@@ -1,0 +1,21 @@
+// 3D ses testi
+fegn Guri3D {
+    // 3D ses ekleme testi
+    addSound3D: (name, path) => {
+        Assert.equal(name, "test_sound")
+        Assert.equal(path, "test.mp3")
+    }
+    
+    // Ses oynatma testi
+    playSound3D: (name) => {
+        Assert.equal(name, "test_sound")
+    }
+    
+    // Ses pozisyon testi
+    setSoundPosition: (name, x, y, z) => {
+        Assert.equal(name, "test_sound")
+        Assert.equal(x, 0)
+        Assert.equal(y, 0)
+        Assert.equal(z, 0)
+    }
+}

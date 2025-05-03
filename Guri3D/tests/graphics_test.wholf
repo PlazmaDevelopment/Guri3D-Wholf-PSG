@@ -1,0 +1,28 @@
+// 3D grafik testi
+fegn Guri3D {
+    // 3D nesne testi
+    addObject3D: (object) => {
+        Assert.equal(object.x, 0)
+        Assert.equal(object.y, 0)
+        Assert.equal(object.z, 0)
+    }
+    
+    // Kamera pozisyon testi
+    setCameraPosition: (x, y, z) => {
+        Assert.equal(x, 0)
+        Assert.equal(y, 0)
+        Assert.equal(z, 10)
+    }
+    
+    // Kamera rotasyon testi
+    setCameraRotation: (x, y, z) => {
+        Assert.equal(x, 0)
+        Assert.equal(y, 0)
+        Assert.equal(z, 0)
+    }
+    
+    // Kamera zoom testi
+    setCameraZoom: (zoom) => {
+        Assert.equal(zoom, 1.0)
+    }
+}

@@ -1,0 +1,45 @@
+// Temel 3D örnek
+fegn Guri3D {
+    // 3D nesne oluşturma
+    addObject3D: (object) => {
+        Console.log("3D nesne eklendi")
+    }
+    
+    // Kamera ayarları
+    setCameraPosition: (0, 0, 10) => {
+        Console.log("Kamera pozisyonu ayarlandı")
+    }
+    
+    setCameraRotation: (0, 0, 0) => {
+        Console.log("Kamera rotasyonu ayarlandı")
+    }
+    
+    setCameraZoom: (1.0) => {
+        Console.log("Kamera zoom ayarlandı")
+    }
+    
+    // Fizik nesnesi
+    addPhysicsObject3D: (object) => {
+        Console.log("3D fizik nesnesi eklendi")
+    }
+    
+    // Ses ekleme
+    addSound3D: ("music", "music.mp3") => {
+        Console.log("3D ses eklendi")
+    }
+    
+    // Tuş olayları
+    onKeyDown: (key, callback) => {
+        Console.log("Tuş basıldı: " + key)
+    }
+    
+    // Joystick olayları
+    onJoystickMove: (callback) => {
+        Console.log("Joystick hareket etti")
+    }
+    
+    // Olay yönetimi
+    update: (deltaTime) => {
+        Console.log("Güncelleme: " + deltaTime)
+    }
+}

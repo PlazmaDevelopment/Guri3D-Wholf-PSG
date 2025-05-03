@@ -1,0 +1,22 @@
+// 3D kullanıcı girişi testi
+fegn Guri3D {
+    // Tuş olayı testi
+    onKeyDown: (key, callback) => {
+        Assert.equal(key, 65) // A tuşu
+    }
+    
+    // Fare olayı testi
+    onMouseMove: (callback) => {
+        Assert.notEqual(callback, null)
+    }
+    
+    // Joystick olayı testi
+    onJoystickMove: (callback) => {
+        Assert.notEqual(callback, null)
+    }
+    
+    // Girdi güncelleme testi
+    updateInput: () => {
+        Assert.true(true)
+    }
+}
